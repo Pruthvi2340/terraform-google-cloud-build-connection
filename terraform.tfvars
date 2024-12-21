@@ -1,0 +1,9 @@
+project_id             = "burner-prus"
+name                   = "retail-demo-app"
+app_installation_id    = var.app_installation_id
+github_secret          = var.github_secret
+connection_name        = "pruthvi2340org"
+location               = "us-central1"
+github_pat_secret_name = "pruthvi2340org"
+secret_project_id      = "burner-prus"
+use_vault              = true
