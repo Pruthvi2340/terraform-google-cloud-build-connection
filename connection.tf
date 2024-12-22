@@ -44,7 +44,7 @@ resource "google_cloudbuildv2_connection" "github_con" {
   github_config {
     app_installation_id = var.app_installation_id
     authorizer_credential {
-      oauth_token_secret_version = google_secret_manager_secret_version.github_token_secret_version[0].id
+      oauth_token_secret_version = google_secret_manager_secret_version.github_token_secret_version.id
     }
   }
   depends_on = [google_secret_manager_secret_version.github_token_secret_version, data.google_iam_policy.serviceagent_secretAccessor]
