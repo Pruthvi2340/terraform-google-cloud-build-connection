@@ -1,8 +1,16 @@
 # This Module only focused on creating 2 gen cloud github connection to cloud build
+
 # Release 1.0.1
 Added integration with HCP vault to retrieve and store secret in secret manager
 
-Pre-Requisites
+# Release 1.0.2
+Rectified hcp vault secret data source index
+
+# Release 1.0.3
+Rectified secret manager version resource index
+
+
+# Pre-Requisites
 ```
 roles/cloudbuild.connectionAdmin needed for the server account or to user account
 
