@@ -19,7 +19,7 @@ resource "google_secret_manager_secret" "github_token_secret" {
 
 resource "google_secret_manager_secret_version" "github_token_secret_version" {
   secret      = google_secret_manager_secret.github_token_secret.id
-  secret_data = var.use_vault ? data.hcp_vault_secrets_secret.git_pat.secret_value : var.github_secret
+  secret_data = var.use_vault ? data.hcp_vault_secrets_secret.git_pat[0].secret_value : var.github_secret
 }
 
 data "google_iam_policy" "serviceagent_secretAccessor" {
